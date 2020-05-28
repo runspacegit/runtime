@@ -1,0 +1,47 @@
+{
+  "name": "@runspace/daemon",
+  "version": "0.0.0",
+  "description": "RunSpace Daemon",
+  "main": "dist/index.js",
+  "author": "Mikhail Marynenko <0x77dev@protonmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "npm-run-all clean tsc",
+    "clean": "rimraf dist",
+    "format": "yarn run prettier --write",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "nodemon": "nodemon --watch dist",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{css,html,js,jsx,json,ts,tsx,md,mdx,yml,yaml}\"",
+    "start": "node dist/index.js",
+    "dev": "npm-run-all build --parallel tsc:watch nodemon",
+    "test": "npm-run-all lint test:format",
+    "test:format": "yarn run prettier --check",
+    "commit": "git-cz",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.16",
+    "vm2": "^3.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.7",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "git-cz": "^4.6.2",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "1.19.1",
+    "rimraf": "^3.0.2",
+    "typescript": "~3.8.3"
+  },
+  "prettier": {
+    "trailingComma": "all"
+  }
+}

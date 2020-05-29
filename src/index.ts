@@ -17,7 +17,7 @@ export class RunspaceRuntime {
       require: {
         external: true,
         builtin: ["fs", "path", "node-fetch", "os", "child_process"],
-        root: tmpdir(),
+        root: "/",
       },
     });
   }
@@ -32,7 +32,7 @@ export class RunspaceRuntime {
         });
       };
       try {
-        const func = this.vm.run(script);
+        const func = this.vm.run(script, __dirname);
         this.vm.on(
           "console.debug",
           (...args: any[]) => (log = [...log, ...args]),

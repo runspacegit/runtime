@@ -8,8 +8,8 @@ Runspace Runtime - allows you to create node administration javascript functions
 
 ```javascript
 module.exports = (context, callback) => {
-  console.info("Hello, World!");
-  callback("Hello, World!");
+  console.info("Hello, World!"
+  callback("Hello, World!"
 };
 ```
 
@@ -35,6 +35,20 @@ will return:
 #### Language possibilities
 
 All Node.js `>=10` features.
+
+#### Console
+
+You can log something using these functions:
+
+```javascript
+console.debug(...someting);
+console.log(...someting);
+console.info(...someting);
+console.warn(...someting);
+console.error(...someting);
+console.dir(...someting);
+console.trace(...someting);
+```
 
 ## Usage
 

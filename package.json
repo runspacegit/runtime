@@ -1,5 +1,5 @@
 {
-  "name": "@runspace/daemon",
+  "name": "@runspace/runtime",
   "version": "0.1.0",
   "description": "RunSpace Daemon",
   "main": "dist/index.js",

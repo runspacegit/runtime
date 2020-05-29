@@ -20,7 +20,7 @@
     "test": "npm-run-all lint test:format",
     "test:format": "yarn run prettier --check",
     "commit": "git-cz",
-    "postinstall": "npm-run-all build",
+    "postinstall": "npm run build",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch"
   },

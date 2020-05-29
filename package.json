@@ -1,6 +1,6 @@
 {
   "name": "@runspace/daemon",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "RunSpace Daemon",
   "main": "dist/index.js",
   "author": "Mikhail Marynenko <0x77dev@protonmail.com>",
@@ -24,6 +24,7 @@
     "tsc:watch": "tsc --watch"
   },
   "dependencies": {
+    "node-fetch": "^2.6.0",
     "source-map-support": "^0.5.16",
     "vm2": "^3.9.2"
   },

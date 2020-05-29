@@ -9,7 +9,7 @@ Runspace Runtime - allows you to create node administration javascript functions
 ```javascript
 module.exports = (context, callback) => {
   console.info("Hello, World!"
-  callback("Hello, World!"
+  callback("Hello, World!")
 };
 ```
 

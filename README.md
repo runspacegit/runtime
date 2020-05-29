@@ -38,4 +38,4 @@ All Node.js `>=10` features.
 
 ## Usage
 
-See exmaples in `./examples`
+See examples in `./examples`

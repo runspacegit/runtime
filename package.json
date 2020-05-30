@@ -1,6 +1,6 @@
 {
   "name": "@runspace/runtime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "RunSpace Daemon",
   "main": "dist/index.js",
   "author": "Mikhail Marynenko <0x77dev@protonmail.com>",
@@ -8,6 +8,10 @@
   "engines": {
     "node": ">=10.0.0"
   },
+  "files": [
+    "/dist",
+    "/lib"
+  ],
   "scripts": {
     "build": "npm-run-all clean tsc",
     "clean": "rimraf dist",
@@ -20,7 +24,7 @@
     "test": "npm-run-all lint test:format",
     "test:format": "yarn run prettier --check",
     "commit": "git-cz",
-    "postinstall": "npm run build",
+    "prepack": "npm run build",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch"
   },

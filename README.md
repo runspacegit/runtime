@@ -1,6 +1,8 @@
 # @runspace/runtime
 
-Runspace Runtime - allows you to create node administration javascript functions written in nodejs.
+Runspace Runtime - allows you to create node (machine) administration javascript functions written in nodejs.
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/d3d9801e380c20fdb785/maintainability)](https://codeclimate.com/github/runspacegit/runtime/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d3d9801e380c20fdb785/test_coverage)](https://codeclimate.com/github/runspacegit/runtime/test_coverage)
 
 ## Runspace\lang
 
@@ -8,8 +10,8 @@ Runspace Runtime - allows you to create node administration javascript functions
 
 ```javascript
 module.exports = (context, callback) => {
-  console.info("Hello, World!"
-  callback("Hello, World!"
+  console.info("Hello, World!")
+  callback("Hello, World!")
 };
 ```
 
